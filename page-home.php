@@ -15,21 +15,27 @@
 
 <?php get_header(); ?>
 
-			<div>
+			<div id="content">
 
-				<div>
+				<div id="inner-content" class="wrap cf">
 
-						<main>
+						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-									<h1 class="page-title"><?php the_title(); ?></h1>
+									<!-- <h1 class="page-title"><?php the_title(); ?></h1> -->
 
 <!-- 									<p class="byline vcard">
 										<?php printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
 									</p> -->
+
+									<div>My name is Scott, and I like the interwebs.</div>
+									<div>Right now, I’m doing QA & rails things with</div>
+									<span>OwnLocal (YC W10) and WordPress in my</span>
+									<span>free time.   I also drum, compose & spend</span> 
+									<span>way too much of my money eating here.</span>
 
 							</article>
 
@@ -50,15 +56,6 @@
 							<?php endif; ?>
 
 						</main>
-<div id="fullpage">
-	<div class="section " id="section0"><h1>fullPage.js</h1></div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
-	    <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
-	</div>
-	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
-	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
-</div>
 
 				</div>
 
