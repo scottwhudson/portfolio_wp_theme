@@ -41,6 +41,10 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
+	width: 400px;
+	display: block;
+	margin-right: none;
+
 	ul {
 		background:$black;
 		margin-top:0;
@@ -138,6 +142,40 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+//SOCIAL NAV
+
+.social-nav {
+	display:block;
+	position:relative;
+	float: right;
+
+	ul {
+		margin-top: 10px;
+
+
+		li {
+			display: inline-block;
+			margin-left: 20px;
+		}
+	}
+}
+
+/*********************
+PAGES
+*********************/
+.hello-p {
+	margin-left: 10%;
+}
+
+.frog {
+	display:block;
+	float: right;
+	margin-right:10%;
+	img {
+	width: 250px;
+}
+}
 
 /*********************
 SIDEBARS & ASIDES

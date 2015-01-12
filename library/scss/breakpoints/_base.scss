@@ -31,7 +31,10 @@ style a page via class
 ********************/
 
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
+.home {
+	background: url("../images/home-background.jpg");
+	}
+
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -80,7 +83,7 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+	color: $white;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -256,10 +259,8 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
-			border-radius: 3px;
+			background-color: transparent;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
 
 			header {
 				border-bottom: 1px solid $light-gray;

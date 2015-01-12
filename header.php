@@ -18,6 +18,9 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+		<?php //fontawesome ?>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
@@ -58,9 +61,9 @@
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
-    					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+    					         'container_class' => 'cf',                 // class of container (should you choose to use it)
     					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
+    					         'menu_class' => 'nav top-nav',               // adding custom nav class
     					         'theme_location' => 'main-nav',                 // where it's located in the theme
     					         'before' => '',                                 // before the menu
         			               'after' => '',                                  // after the menu
@@ -71,6 +74,14 @@
 						)); ?>
 
 					</nav>
+
+					<nav class="social-nav">
+						<ul>
+							<li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+						</ul>
+					</nav>	
 
 				</div>
 
