@@ -18,7 +18,7 @@ GENERAL STYLES
 body {
 	font-family: $montserrat;
 	font-size: 100%;
-	line-height: 1.5;
+	line-height: 1.6;
 	color: $text-color;
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
@@ -112,7 +112,7 @@ H1, H2, H3, H4, H5 STYLES
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: bold;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -178,6 +178,29 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+.page-id-4 {
+	
+	.nav {
+		
+		.menu-item-15 a {
+			color: $white;
+			border-bottom:4px solid $white;
+		}
+	}
+}
+
+.blog {
+	
+	.nav {
+
+		.menu-item-14 a {
+			color: $white;
+			border-bottom:4px solid $white;
+		}
+	}
+}
+
+
 
 .nav {
 	border-bottom: 0;
@@ -189,7 +212,8 @@ and more scalable.
 			display: block;
 			color: $white;
 			text-decoration: none;
-			padding: 0.75em;
+			margin: 0.75em;
+			padding-bottom: 4px;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -249,6 +273,14 @@ and more scalable.
 
 } /* end .nav */
 
+/*********************
+PAGES
+*********************/
+
+.hello-h {
+	color: $white;
+	text-align: center;
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -865,6 +897,7 @@ FOOTER STYLES
 	clear: both;
 	background-color: transparent;
 	color: $light-gray;
+
 }
 
 	/*

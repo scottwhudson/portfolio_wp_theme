@@ -17,7 +17,9 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+	height: 100%;
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -39,6 +41,8 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
+
+
 .nav {
 	border: 0;
 	width: 400px;
@@ -57,6 +61,14 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
+			color: $dark-gray;
+			border-bottom:4px solid;
+			border-bottom-color: transparent;
+			// -webkit-transition: all 500ms ease-out;
+   //  		-moz-transition: all 500ms ease-out;
+   //  		-o-transition: all 500ms ease-out;
+   //  		transition: all 500ms ease-out;
+
 
 			/*
 			you can use hover styles here even though this size
@@ -64,9 +76,22 @@ NAVIGATION STYLES
 			*/
 			&:hover, &:focus {
 				color: $white;
-				text-decoration: underline;
+				border-bottom:4px solid $white;
+
+				-webkit-transition: all 500ms ease;
+    			-moz-transition: all 500ms ease;
+    			-o-transition: all 500ms ease;
+    			transition: all 500ms ease;
+
+    			// -webkit-transition: border-bottom 500ms ease;
+    			// -moz-transition: border-bottom 500ms ease;
+    			// -o-transition: border-bottom 500ms ease;
+    			// transition: border-bottom 500ms ease;
+				
 			}
 		}
+
+		
 
 		&:first-child {}
 		&:last-child {}
@@ -143,6 +168,8 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+
+
 //SOCIAL NAV
 
 .social-nav {
@@ -164,16 +191,32 @@ NAVIGATION STYLES
 /*********************
 PAGES
 *********************/
+
+.main {
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	vertical-align: middle;
+	top: 50%;
+}
+
+.hello-h {
+	text-align: left;
+	font-size: 40pt;
+	display: block;
+	clear: both;
+	margin: 0px;
+}
+
 .hello-p {
-	margin-left: 10%;
+	color: $white;
+	font-size: 12pt;
 }
 
 .frog {
-	display:block;
-	float: right;
-	margin-right:10%;
+	display:inline-block;
 	img {
-	width: 250px;
+	width: 100%;
 }
 }
 
@@ -309,6 +352,16 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+.footer {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
 .footer-links {
 	ul {
 		li {

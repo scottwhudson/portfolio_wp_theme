@@ -19,20 +19,23 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-6of10 d-6of10" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-all d-all" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+								<div class="hello m-all t-1of2 d-1of2">	
+									
+									<h1 class="hello-h">HI, HOW<br />ARE YOU</h1>
 
 									<p class="hello-p">My name is Scott, and I like the interwebs.<br>
 									Right now, I’m doing QA & rails things with<br>
 									OwnLocal (YC W10) and WordPress in my<br>
 									free time.   I also drum, compose & spend<br> 
 									way too much of my money eating here.</p>
+								</div>
+
+								<div class="frog m-all t-1of2 d-1of2 last-col">
+									<img src="<?php echo get_template_directory_uri(); ?>/library/images/frog-soft.png" />
+								</div>
 
 						</main>
-
-						<div class="frog">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/frog-soft.png" />
-						</div>
-
 
 				</div>
 
