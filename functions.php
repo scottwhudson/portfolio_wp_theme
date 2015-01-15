@@ -239,11 +239,10 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
+  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
-
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

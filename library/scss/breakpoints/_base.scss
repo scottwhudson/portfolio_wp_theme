@@ -35,7 +35,11 @@ style a page via class
 	background: url("../images/home-background.jpg");
 	}
 
-.blog {}                          /* blog template page */
+.blog {
+	background: url("../images/blog-background.jpg");
+	background-image-position: absolute;
+	}
+	                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
 	.date-paged-1 {}                /* replace the number to the corresponding page number */
@@ -84,6 +88,7 @@ LINK STYLES
 
 a, a:visited {
 	color: $white;
+	text-decoration: none;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -287,7 +292,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+	// margin-top: 1.5em;
 }
 
 		.hentry {
@@ -295,8 +300,8 @@ POSTS & CONTENT STYLES
 			margin-bottom: 1.5em;
 
 			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
+				// border-bottom: 1px solid $light-gray;
+				// padding: 1.5em;
 			}
 
 			footer {
@@ -337,7 +342,7 @@ POSTS & CONTENT STYLES
 		/* post meta */
 		.byline {
 			color: $meta-gray;
-			font-style: italic;
+			// font-style: italic;
 			margin: 0;
 
 			time {}
@@ -897,6 +902,8 @@ FOOTER STYLES
 	clear: both;
 	background-color: transparent;
 	color: $light-gray;
+	font-family: $cardo;
+	font-size:14pt;
 
 }
 
