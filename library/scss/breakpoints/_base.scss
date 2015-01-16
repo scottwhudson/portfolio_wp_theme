@@ -287,9 +287,17 @@ PAGES
 	text-align: center;
 }
 
+.blog-header {
+		color: $white;
+		font-size: 70pt;
+		
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+
 
 #content {
 	// margin-top: 1.5em;
@@ -321,7 +329,11 @@ POSTS & CONTENT STYLES
 			margin: 0;
 		}
 
-		.single-title {}
+		.single-title {
+			background-color: #000000;
+			height: 300px;
+			z-index: 100;
+		}
 
 		.page-title {}
 

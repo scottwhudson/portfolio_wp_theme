@@ -52,11 +52,13 @@ NAVIGATION STYLES
 	width: 400px;
 	display: block;
 	margin-right: none;
+	margin-left:-10px;
 
 	ul {
 		background:$black;
 		margin-top:0;
 	}
+
 	li {
 		float: left;
 		position: relative;
@@ -238,7 +240,7 @@ PAGES
 }
 
 .article-header {
-	padding-bottom:20px;
+	// padding-bottom:20px;
 
 	text-decoration: none;
 

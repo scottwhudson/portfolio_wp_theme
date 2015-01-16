@@ -19,7 +19,8 @@
 										<h1 class="h2 entry-title"><?php the_title(); ?>
 										</h1>
  										<p class="byline entry-meta vcard">
-                                        				<?php the_date('m.d.Y', '<span class="entry-time">', '</span>'); ?>
+                                        				<?php the_date('m.d.Y', '<span class="entry-time">','</span>'); ?>
+                                        				<span class="entry-time"> - READ MORE</span>
 										</p>
 									</div> 
 
