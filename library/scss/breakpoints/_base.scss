@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.6;
 	color: $text-color;
-	background-color: $gray;
+	background-color: $white;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -37,7 +37,7 @@ style a page via class
 
 .blog {
 	background: url("../images/blog-background.jpg");
-	background-image-position: absolute;
+	background-attachment: fixed;
 	}
 	                          /* blog template page */
 .archive {}                       /* archive page */
@@ -210,6 +210,7 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin: 0;
+	background-color: $dark-gray;
 
 	li {
 
@@ -315,11 +316,15 @@ POSTS & CONTENT STYLES
 			}
 
 			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				padding: 1.5em 0 0;
+				// border-top: 1px solid $light-gray;
 
 				p {
 					margin: 0;
+				}
+
+				span {
+					color: $dark-gray;
 				}
 			}
 
@@ -333,7 +338,7 @@ POSTS & CONTENT STYLES
 
 		.single-title {
 			height: 300px;
-			z-index: 100;
+			z-index: 100;		
 		}
 
 		.page-title {}
@@ -371,6 +376,7 @@ POSTS & CONTENT STYLES
 		/* entry content */
 		.entry-content {
 			padding: 1.5em 1.5em 0;
+			color: $black;
 
 			p {
 				margin: 0 0 1.5em;

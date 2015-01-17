@@ -18,7 +18,7 @@
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright">made in austin, tx</p>
+					<p class="source-org copyright"></p>
 
 				</div>
 

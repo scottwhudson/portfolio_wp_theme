@@ -53,6 +53,7 @@ NAVIGATION STYLES
 	display: block;
 	margin-right: none;
 	margin-left:-10px;
+	z-index:100000;
 
 	ul {
 		background:$black;
@@ -64,6 +65,7 @@ NAVIGATION STYLES
 		position: relative;
 		font-weight: 700;
 		letter-spacing: 0.3px;
+		z-index: 100000000;
 
 		a {
 			border-bottom: 0;
@@ -275,6 +277,26 @@ PAGES
 
 .entry-time {
 	opacity: 0;
+}
+
+.title-container {
+	height: 300px;
+	position: relative;
+	z-index: 0;
+	h1 {
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 20px;
+		color: $white;
+		z-index: 0;
+	}
+}
+
+.entry-content {
+	padding: 1.5em 0 0;
+	font-family: $cardo;
+	font-weight: 400;
+	font-size: 14pt;
 }
 
 /*********************

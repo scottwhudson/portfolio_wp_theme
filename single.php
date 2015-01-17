@@ -21,7 +21,7 @@
 
                   					<div class="wrap title-container">
 
-                    					<h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
+                    					<h1 class="wrap" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
                   					</div>
 
                 				</header> <?php // end article header ?>
