@@ -12,7 +12,7 @@
 
 							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-								<header class="article-header">
+								<header class="article-header blog-index-header">
 
 									<div class="wrap">
 

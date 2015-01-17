@@ -239,10 +239,8 @@ PAGES
 	}
 }
 
-.article-header {
-	// padding-bottom:20px;
-
-	text-decoration: none;
+.blog-index-header {
+		text-decoration: none;
 
 	h1 {
 		font-size: 32pt;
@@ -262,9 +260,16 @@ PAGES
 			color: $red;
 		}
 
-
-
 	}
+}
+
+.article-header {
+	// padding-bottom:20px;
+
+.entry-header {
+	vertical-align:text-bottom;
+}
+
 
 }
 

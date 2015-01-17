@@ -455,31 +455,36 @@ PAGES
 }
 
 /* line 242, ../scss/breakpoints/_768up.scss */
-.article-header {
+.blog-index-header {
   text-decoration: none;
 }
-/* line 247, ../scss/breakpoints/_768up.scss */
-.article-header h1 {
+/* line 245, ../scss/breakpoints/_768up.scss */
+.blog-index-header h1 {
   font-size: 32pt;
   text-decoration: none;
 }
-/* line 251, ../scss/breakpoints/_768up.scss */
-.article-header:hover {
+/* line 249, ../scss/breakpoints/_768up.scss */
+.blog-index-header:hover {
   background-color: white;
 }
-/* line 254, ../scss/breakpoints/_768up.scss */
-.article-header:hover h1 {
+/* line 252, ../scss/breakpoints/_768up.scss */
+.blog-index-header:hover h1 {
   color: #990000;
   text-decoration: none !important;
 }
-/* line 259, ../scss/breakpoints/_768up.scss */
-.article-header:hover .entry-time {
+/* line 257, ../scss/breakpoints/_768up.scss */
+.blog-index-header:hover .entry-time {
   opacity: 1;
   text-decoration: none !important;
   color: #990000;
 }
 
-/* line 271, ../scss/breakpoints/_768up.scss */
+/* line 269, ../scss/breakpoints/_768up.scss */
+.article-header .entry-header {
+  vertical-align: text-bottom;
+}
+
+/* line 276, ../scss/breakpoints/_768up.scss */
 .entry-time {
   opacity: 0;
 }
@@ -492,7 +497,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 284, ../scss/breakpoints/_768up.scss */
+/* line 289, ../scss/breakpoints/_768up.scss */
 .footer {
   display: block;
   position: absolute;
@@ -503,7 +508,7 @@ mobile. Make sure to double check these!
   width: 100%;
 }
 
-/* line 296, ../scss/breakpoints/_768up.scss */
+/* line 301, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
