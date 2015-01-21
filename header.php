@@ -75,6 +75,8 @@
 
 					</nav>
 
+					<a class="navButton" href="#"><i class="fa fa-bars fa-2x"></i></a>
+
 					<nav class="social-nav">
 						<ul>
 							<li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>

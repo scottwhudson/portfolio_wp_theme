@@ -55,7 +55,7 @@
 
 		                <footer class="wrap article-footer">
 
-		                	<a href="#"><span><i class="fa fa-chevron-left"></i>&nbsp; PREVIOUS POST</span></a>
+		                	<a href="#"><span><i class="fa fa-chevron-left"></i>&nbsp; PREV POST</span></a>
 		                	&nbsp; &nbsp;
 		                	<a href="#"><span>NEXT POST &nbsp; <i class="fa fa-chevron-right"></i></span></a>
 

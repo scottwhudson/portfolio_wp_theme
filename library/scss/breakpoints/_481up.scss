@@ -27,52 +27,148 @@ them in here, they won't work.
 NAVIGATION STYLES
 *********************/
 
-.nav {}
+.navButton {
+	display: none;
+}
 
-	/* .menu is clearfixed inside mixins.scss */
-	.menu {
-		ul {
+.nav {
+	border: 0;
+	width: 400px;
+	display: block;
+	margin-right: none;
+	margin-left:-10px;
+	// z-index:100000;
+
+	ul {
+		background:$black;
+		margin-top:0;
+	}
+
+	li {
+		float: left;
+		position: relative;
+		font-weight: 700;
+		letter-spacing: 0.3px;
+		z-index: 100000000;
+
+		a {
+			border-bottom: 0;
+			color: $white;
+			opacity: 0.3;
+			border-bottom:4px solid;
+			border-bottom-color: transparent;
+			margin: 0.75em;
+			// -webkit-transition: all 500ms ease-out;
+   //  		-moz-transition: all 500ms ease-out;
+   //  		-o-transition: all 500ms ease-out;
+   //  		transition: all 500ms ease-out;
+
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				border-bottom:4px solid $white;
+				opacity: 1;
+
+				-webkit-transition: all 500ms ease;
+    			-moz-transition: all 500ms ease;
+    			-o-transition: all 500ms ease;
+    			transition: all 500ms ease;
+
+    			// -webkit-transition: border-bottom 500ms ease;
+    			// -moz-transition: border-bottom 500ms ease;
+    			// -o-transition: border-bottom 500ms ease;
+    			// transition: border-bottom 500ms ease;
+				
+			}
+		}
+
+		
+
+		&:first-child {
+			padding-left: 0px;
+			margin-left: 0px;
+		}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
 			li {
+
 				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
 
-					/*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-					&:hover, &:focus {
+					&:hover,
+					&:focus {}
 
-					}
+					&:link {}
 				}
 
 				&:first-child {}
-				&:last-child {}
 
-				/*
-				plan your menus and drop-downs wisely.
-				*/
-				ul.sub-menu,
-				ul.children {
-					li {
-						a {
-							&:hover,
-							&:focus {}
-							&:link {}
-						}
-						&:first-child {}
-						&:last-child {}
+				&:last-child {
+
+					a {
+						border-bottom: 0;
 					}
 				}
-			} /* end .menu ul li */
 
-			/* highlight current page */
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
 			li.current-menu-item,
 			li.current_page_item,
 			li.current_page_ancestor {
 				a {}
-			}  /* end current highlighters */
-		} /* end .menu ul */
-	} /* end .menu */
+			}
+		}
 
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+.menu-item-14:hover {
+	border-color: $blue;
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

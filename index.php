@@ -6,7 +6,7 @@
 
 						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-							<h1 class="wrap blog-header">BLOG</h1>
+							<!-- <h1 class="wrap blog-header">ARTICLES</h1> -->
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

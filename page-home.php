@@ -26,7 +26,7 @@
 
 									<p class="hello-p">My name is Scott, and I like the interwebs.<br>
 									Right now, I’m doing QA & rails things with<br>
-									OwnLocal (YC W10) and WordPress in my<br>
+									<a href="#">OwnLocal</a> (YC W10) and WordPress in my<br>
 									free time.   I also drum, compose & spend<br> 
 									way too much of my money eating here.</p>
 								</div>

@@ -45,7 +45,9 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-
+.navButton {
+	display: none;
+}
 
 .nav {
 	border: 0;
@@ -53,7 +55,7 @@ NAVIGATION STYLES
 	display: block;
 	margin-right: none;
 	margin-left:-10px;
-	z-index:100000;
+	// z-index:100000;
 
 	ul {
 		background:$black;
@@ -69,9 +71,11 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
-			color: $dark-gray;
+			color: $white;
+			opacity: 0.3;
 			border-bottom:4px solid;
 			border-bottom-color: transparent;
+			margin: 0.75em;
 			// -webkit-transition: all 500ms ease-out;
    //  		-moz-transition: all 500ms ease-out;
    //  		-o-transition: all 500ms ease-out;
@@ -85,6 +89,7 @@ NAVIGATION STYLES
 			&:hover, &:focus {
 				color: $white;
 				border-bottom:4px solid $white;
+				opacity: 1;
 
 				-webkit-transition: all 500ms ease;
     			-moz-transition: all 500ms ease;
@@ -179,29 +184,37 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
-
-
-//SOCIAL NAV
-
-.social-nav {
-	display:block;
-	position:relative;
-	float: right;
-
-	ul {
-		margin-top: 10px;
-
-
-		li {
-			display: inline-block;
-			margin-left: 20px;
-		}
-	}
+.menu-item-14:hover {
+	border-color: $blue;
 }
+
 
 /*********************
 PAGES
 *********************/
+
+.page-id-4 {
+	
+	.nav {
+		
+		.menu-item-15 a {
+			color: $white;
+			border-bottom:4px solid $blue;
+			opacity: 1;
+		}
+	}
+}
+
+.blog {
+	
+	.nav {
+
+		.menu-item-14 a {
+			color: $white;
+			border-bottom:4px solid $white;
+		}
+	}
+}
 
 .main {
 	height: 100%;
@@ -280,15 +293,9 @@ PAGES
 }
 
 .title-container {
-	height: 300px;
-	position: relative;
-	z-index: 0;
+	height: 600px;
 	h1 {
-		position: absolute;
-		bottom: 0;
-		margin-bottom: 20px;
-		color: $white;
-		z-index: 0;
+		padding: 0;
 	}
 }
 

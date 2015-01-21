@@ -72,7 +72,9 @@ style a page via class
 .logged-in {}                     /* if user is logged in */
 .paged {}                         /* paged items like search results or archives */
 	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
-
+	.page-id-8 {
+		background-color: $black;
+	}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -161,11 +163,11 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: transparent;
+	// background-color: #666666;
 }
 
 	#logo {
-		margin: 0.75em 0;
+		// margin: 0.75em 0;
 
 		a {
 			color: $white;
@@ -183,27 +185,7 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-.page-id-4 {
-	
-	.nav {
-		
-		.menu-item-15 a {
-			color: $white;
-			border-bottom:4px solid $white;
-		}
-	}
-}
 
-.blog {
-	
-	.nav {
-
-		.menu-item-14 a {
-			color: $white;
-			border-bottom:4px solid $white;
-		}
-	}
-}
 
 
 
@@ -211,6 +193,7 @@ and more scalable.
 	border-bottom: 0;
 	margin: 0;
 	background-color: $dark-gray;
+	display:none;
 
 	li {
 
@@ -218,7 +201,7 @@ and more scalable.
 			display: block;
 			color: $white;
 			text-decoration: none;
-			margin: 0.75em;
+			// margin: 0.75em;
 			padding-bottom: 4px;
 
 			/*
@@ -279,6 +262,38 @@ and more scalable.
 
 } /* end .nav */
 
+a.navButton {
+	background-color:transparent;
+	color: $white;
+	z-index: 1000000000;
+	display:inline;
+	margin:100px;
+	padding:100px;
+	height:200px !important;
+}
+
+.social-nav {
+	display:block;
+	position:relative;
+	float: right;
+	z-index: 10000000000;
+
+	ul {
+		margin-top: 10px;
+
+
+		li {
+			display: inline-block;
+			margin-left: 20px;
+			opacity: 0.5;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
 /*********************
 PAGES
 *********************/
@@ -292,6 +307,20 @@ PAGES
 		color: $white;
 		font-size: 70pt;
 		
+}
+
+.title-container {
+	height: 400px;
+	position: relative;
+	z-index: -1;
+	h1 {
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 20px;
+		color: $white;
+		z-index: 1000000000000000;
+		padding: 0 0.6em;
+	}
 }
 
 /*********************
@@ -313,11 +342,15 @@ POSTS & CONTENT STYLES
 			header {
 				// border-bottom: 1px solid $light-gray;
 				// padding: 1.5em;
+				color: $white;
+				font-size: 10pt;
 			}
 
 			footer {
 				padding: 1.5em 0 0;
-				// border-top: 1px solid $light-gray;
+				text-align: center;
+
+				}
 
 				p {
 					margin: 0;
@@ -325,7 +358,11 @@ POSTS & CONTENT STYLES
 
 				span {
 					color: $dark-gray;
-				}
+					opacity: 0.5;
+				
+						&:hover {
+							opacity: 1;
+						}
 			}
 
 		} /* end .hentry */
@@ -377,6 +414,7 @@ POSTS & CONTENT STYLES
 		.entry-content {
 			padding: 1.5em 1.5em 0;
 			color: $black;
+			font-family: $cardo;
 
 			p {
 				margin: 0 0 1.5em;
@@ -469,7 +507,7 @@ POSTS & CONTENT STYLES
 			img {
 				// margin: 0 0 1.5em 0;
 				max-width: 100%;
-				height: auto;
+				// height: auto;
 				overflow-x: hidden;
 			}
 
@@ -489,7 +527,7 @@ POSTS & CONTENT STYLES
 			.size-medium,
 			.size-thumbnail {
 				max-width: 100%;
-				height: auto;
+				// height: auto;
 			}
 
 			pre {
