@@ -15,6 +15,10 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
+header {
+	z-index:100000000;
+}
+
 body {
 	font-family: $montserrat;
 	font-size: 100%;
@@ -36,7 +40,7 @@ style a page via class
 	}
 
 .blog {
-	background: url("../images/blog-background.jpg");
+	background: url("../images/blog-background-min.jpg");
 	background-attachment: fixed;
 	}
 	                          /* blog template page */
@@ -75,6 +79,9 @@ style a page via class
 	.page-id-8 {
 		background-color: $black;
 	}
+	.page-id-10 {
+		background: url("../images/contact-background-min.jpg");
+	}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -82,6 +89,10 @@ LAYOUT & GRID STYLES
 .wrap {
 	width: 96%;
 	margin: 0 auto;
+}
+
+.nav-wrap {
+	width: 100%;
 }
 
 /*********************
@@ -192,17 +203,18 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin: 0;
-	background-color: $dark-gray;
+	background-color: $black;
 	display:none;
+	z-index:100000000;
 
 	li {
 
 		a {
 			display: block;
 			color: $white;
-			text-decoration: none;
-			// margin: 0.75em;
-			padding-bottom: 4px;
+			font-weight: 700;
+			text-align: center;
+			padding: 0.75em;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -262,21 +274,50 @@ and more scalable.
 
 } /* end .nav */
 
-a.navButton {
+	button {
+		display: inline;
+		z-index: 100000000000;
+	}
+
+#topheight {
+	z-index:100000000000;
+}
+.navButton {
 	background-color:transparent;
 	color: $white;
-	z-index: 1000000000;
-	display:inline;
-	margin:100px;
-	padding:100px;
-	height:200px !important;
+	display:block;
+	float: left;
+	position: relative;
+	opacity: 0.5;
+	border: none;
+	margin-left: 15px;
+	margin-top:15px;
+	z-index: 100000000;
+
+
+	a {
+		z-index: 100000000;
+		cursor: pointer;
+	}
+	
+	i {
+		z-index:1000000000;
+		cursor: pointer;
+
+	}
+
+	i:hover {
+		opacity: 1;
+	}
+
 }
 
 .social-nav {
 	display:block;
 	position:relative;
 	float: right;
-	z-index: 10000000000;
+	z-index: 100000000;
+	margin-right: 20px;
 
 	ul {
 		margin-top: 10px;
@@ -286,6 +327,7 @@ a.navButton {
 			display: inline-block;
 			margin-left: 20px;
 			opacity: 0.5;
+			z-index: 100000000;
 
 			&:hover {
 				opacity: 1;
@@ -303,6 +345,21 @@ PAGES
 	text-align: center;
 }
 
+.hello-p {
+	color: $white;
+	text-align: center;
+}
+
+.frog {
+	
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 360px;
+	}
+}
+
 .blog-header {
 		color: $white;
 		font-size: 70pt;
@@ -312,17 +369,20 @@ PAGES
 .title-container {
 	height: 400px;
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 	h1 {
 		position: absolute;
 		bottom: 0;
 		margin-bottom: 20px;
 		color: $white;
-		z-index: 1000000000000000;
 		padding: 0 0.6em;
 	}
 }
 
+// .contact-border {
+// 	height: 100px;
+// 	border: 5px solid #ffffff !important;
+// }
 /*********************
 POSTS & CONTENT STYLES
 *********************/

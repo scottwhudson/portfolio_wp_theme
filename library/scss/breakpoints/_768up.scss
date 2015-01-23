@@ -33,6 +33,12 @@ LAYOUT & GRID STYLES
 	width: 100%;
 }
 
+.nav-wrap {
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*********************
 HEADER STYLES
 *********************/
@@ -76,6 +82,8 @@ NAVIGATION STYLES
 			border-bottom:4px solid;
 			border-bottom-color: transparent;
 			margin: 0.75em;
+			text-align: left;
+			padding:0px;
 			// -webkit-transition: all 500ms ease-out;
    //  		-moz-transition: all 500ms ease-out;
    //  		-o-transition: all 500ms ease-out;
@@ -188,6 +196,9 @@ NAVIGATION STYLES
 	border-color: $blue;
 }
 
+.social-nav {
+	margin: 0px;
+}
 
 /*********************
 PAGES
@@ -237,20 +248,21 @@ PAGES
 	margin-top:10%;
 }
 
-.frog {
-	height:100%;
-	margin-top:10%;
-}
-
 .hello-p {
 	color: $white;
 	font-size: 12pt;
+	text-align: left;
 }
 
 .frog {
+	height:100%;
+	margin-top:13%;
 	display:inline-block;
+	float: right;
+	width: 350px;
 	img {
-		width: 100%;
+		width: 350px;
+		display:inline-block;
 	}
 }
 

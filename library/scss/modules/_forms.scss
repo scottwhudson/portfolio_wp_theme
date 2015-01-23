@@ -44,22 +44,28 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: $text-color;
-  border-radius: 3px;
+  border-bottom: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: $white;
   vertical-align: middle;
   box-shadow: none;
-  border: 0;
   width: 100%;
   max-width: 400px;
   font-family: $montserrat;
-  background-color: $gray;
-  @include transition(background-color 0.24s ease-in-out);
+  background-color: transparent;
+  opacity: 0.6;
+
+  @include transition(opacity 0.24s ease-in-out);
 
   // a focused input (or hovered on)
   &:focus,
   &:active {
-    background-color: lighten($gray, 4%);
-    outline: none; 
+    opacity: 1;
+    outline: none;
+    background-color: transparent;
+    border-bottom:2px solid #ffffff; 
   } // end hover or focus
 
   // error notification
@@ -123,4 +129,18 @@ select {
   background-position: 97.5% center;
 }
 
+  ::-webkit-input-placeholder {
+   color: $white;
+  }
 
+  :-moz-placeholder { /* Firefox 18- */
+     color: $white;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $white;  
+  }
+
+  :-ms-input-placeholder {  
+     color: $white;  
+  }

@@ -29,15 +29,17 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   position: relative;
   font-family: $sans-serif;
   text-decoration: none;
-  color: $white;
+  color: $black;
   font-size: 0.9em;
-  font-size: 34px;
+  font-size: 70px;
   line-height: 34px;
   font-weight: normal;
   padding: 0 24px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  opacity: 0.5;
+  background-color: transparent;
   @include transition(background-color 0.14s ease-in-out);
 
   // hovering on the btn

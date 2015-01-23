@@ -49,7 +49,7 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div id="inner-header" class="wrap cf">
+				<div id="inner-header" class="nav-wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<!-- <p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p> -->
@@ -75,7 +75,7 @@
 
 					</nav>
 
-					<a class="navButton" href="#"><i class="fa fa-bars fa-2x"></i></a>
+					<button class="navButton" id="topheight"><i class="fa fa-bars fa-2x"></i></button>
 
 					<nav class="social-nav">
 						<ul>

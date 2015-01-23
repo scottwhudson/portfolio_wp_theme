@@ -582,8 +582,6 @@ body#tinymce.wp-editor button,
 body#tinymce.wp-editor html input[type="button"],
 body#tinymce.wp-editor input[type="reset"],
 body#tinymce.wp-editor input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
   cursor: pointer;
   /* 3 */
 }
