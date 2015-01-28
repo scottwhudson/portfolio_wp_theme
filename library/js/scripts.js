@@ -114,6 +114,11 @@ jQuery(document).ready(function($) {
   $('.nav').slideToggle("slow");
 });
 
+$( document ).ready(function() {
+  $(".hidden").fadeIn( 2000 ).removeClass('hidden');
+});
+
+
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it

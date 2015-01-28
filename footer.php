@@ -18,7 +18,7 @@
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright"></p>
+					<!-- <p class="source-org copyright">made with tacos in austin, tx</p> -->
 
 				</div>
 

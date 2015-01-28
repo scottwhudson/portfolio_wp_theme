@@ -79,9 +79,9 @@
 
 					<nav class="social-nav">
 						<ul>
-							<li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+							<li><a href="https://github.com/scottwhudson" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+							<li><a href="https://twitter.com/swhudson" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="http://www.linkedin.com/in/scottwhudson" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
 						</ul>
 					</nav>	
 

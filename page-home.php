@@ -17,7 +17,7 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="wrap cf hidden">
 
 						<main id="main" class="m-all t-all d-all" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 								<div class="hello m-all t-1of2 d-1of2">	
@@ -25,10 +25,9 @@
 									<h1 class="hello-h">HI, HOW<br />ARE YOU</h1>
 
 									<p class="hello-p">My name is Scott, and I like the interwebs.<br>
-									Right now, I’m doing QA & rails things with<br>
-									<a href="#">OwnLocal</a> (YC W10) and WordPress in my<br>
-									free time.   I also drum, compose & spend<br> 
-									way too much of my money eating here.</p>
+									Right now, I’m doing front end & rails things with
+									<a href="http://ownlocal.com" target="_blank">OwnLocal</a> and WordPress in my free<br>time. I also drum, compose & spend 
+									way<br>too much of my money eating here.</p>
 								</div>
 
 								<div class="frog m-all t-1of2 d-1of2 last-col">

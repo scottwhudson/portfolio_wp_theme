@@ -1,4 +1,4 @@
-/******************************************************************
+en/******************************************************************
 Site Name:
 Author:
 
@@ -272,8 +272,13 @@ PAGES
 	h1 {
 		font-size: 32pt;
 		text-decoration: none;
+		padding-bottom: 20px;
 	}
 	&:hover {
+		-webkit-transition: all 1s ease;
+   		-moz-transition: all 1s ease;
+  		-o-transition: all 1s ease;
+   		transition: all 1s ease;
 		background-color: $white;
 
 		h1 {
@@ -307,6 +312,7 @@ PAGES
 .title-container {
 	height: 600px;
 	h1 {
+		font-size: 32pt;
 		padding: 0;
 	}
 }
@@ -315,8 +321,9 @@ PAGES
 	padding: 1.5em 0 0;
 	font-family: $cardo;
 	font-weight: 400;
-	font-size: 14pt;
+	font-size: 17pt;
 }
+
 
 /*********************
 FOOTER STYLES
@@ -329,7 +336,7 @@ mobile. Make sure to double check these!
 */
 .footer {
 	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	text-align: center;
 	margin-left: auto;

@@ -27,16 +27,21 @@
 
 								<header class="article-header">
 
-									<h1 class="page-title"><?php the_title(); ?></h1>
+									<h1 class="page-title hello-h"><?php the_title(); ?></h1>
 
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
+									<div>
+										<input type="text" class="field" placeholder="FIRST NAME"></input>
+										<br/>
 									
-									<input type="text" class="field" placeholder="FIRST NAME"></input>
-									
-									<input type="text" class="field" placeholder="LAST NAME"></input>
+										<input type="text" class="field" placeholder="LAST NAME"></input>
+										<br/>
+									</div>
 									<textarea placeholder="MESSAGE"></textarea>
+
+									<button class="blue-btn" type="submit">SUBMIT</button>
 								
 								</section>
 
