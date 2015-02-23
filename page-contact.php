@@ -13,6 +13,67 @@
 */
 ?>
 
+<?php
+
+  //response generation function
+
+  $response = "";
+
+  //function to generate response
+  function my_contact_form_generate_response($type, $message){
+
+    global $response;
+
+    if($type == "success") $response = "<div class='success'>{$message}</div>";
+    else $response = "<div class='error'>{$message}</div>";
+
+  }
+
+  //response messages
+  $not_human       = "Human verification incorrect.";
+  $missing_content = "Please supply all information.";
+  $email_invalid   = "Email Address Invalid.";
+  $message_unsent  = "Message was not sent. Try Again.";
+  $message_sent    = "Thanks! Your message has been sent.";
+
+  //user posted variables
+  $name = $_POST['message_name'];
+  $email = $_POST['message_email'];
+  $message = $_POST['message_text'];
+  $human = $_POST['message_human'];
+
+  //php mailer variables
+  $to = get_option('admin_email');
+  $subject = "Someone sent a message from ".get_bloginfo('name');
+  $headers = 'From: '. $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n";
+
+  if(!$human == 0){
+    if($human != 2) my_contact_form_generate_response("error", $not_human); //not human!
+    else {
+
+      //validate email
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        my_contact_form_generate_response("error", $email_invalid);
+      else //email is valid
+      {
+        //validate presence of name and message
+        if(empty($name) || empty($message)){
+          my_contact_form_generate_response("error", $missing_content);
+        }
+        else //ready to go!
+        {
+          $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+          if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
+          else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+        }
+      }
+    }
+  }
+  else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
+
+?>
+
 <?php get_header(); ?>
 
 			<div id="content">
@@ -32,17 +93,30 @@
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
-									<div>
-										<input type="text" class="field" placeholder="FIRST NAME"></input>
-										<br/>
 									
-										<input type="text" class="field" placeholder="LAST NAME"></input>
-										<br/>
-									</div>
-									<textarea placeholder="MESSAGE"></textarea>
+									<div id="respond">
 
-									<button class="blue-btn" type="submit">SUBMIT</button>
-								
+										<form action="<?php the_permalink(); ?>" method="post">
+											<div>
+												<input type="text" class="field" placeholder="NAME" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>"></input>
+												<br/>
+											
+												<input type="text" class="field" name="message_email" placeholder="EMAIL" value="<?php echo esc_attr($_POST['message_email']); ?>"></input>
+												<br/>
+											</div>
+
+											<textarea placeholder="MESSAGE" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+
+											<h4><label for="message_human">Human Verification: <span>*</span> <br><input id="verification" type="text" name="message_human">   + 3 = 5</label></h4>
+										    	<input type="hidden" name="submitted" value="1">
+
+											<button id="sendbtn" class="blue-btn" type="submit">SUBMIT</button>
+										</form>
+									
+									<?php echo $response; ?>
+
+									</div>
+									
 								</section>
 
 
