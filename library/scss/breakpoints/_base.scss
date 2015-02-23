@@ -112,7 +112,6 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $white;
 	text-decoration: none;
 
 	/* on hover */
@@ -181,6 +180,71 @@ h5, .h5 {
 	letter-spacing: 2px;
 }
 
+.big-red {
+	color: #e83a25;
+	text-shadow: 3px 3px 0px #888;
+	letter-spacing: 4px;
+}
+
+.bold-red-link {
+	font-weight:800;
+	color: #e83a25;
+	text-shadow: 2px 2px 0px #888;	
+
+}
+
+.red-link {
+	color: #e83a25;
+}
+
+.title_1 {
+	font-size:80px;
+}
+
+.title_2 {
+	font-size:68px;
+}
+
+.line_1 {
+	font-size:44px;
+}
+
+.line_2 {
+	font-size:32.5px;
+	line-height:10px;
+}
+
+.line_3 {
+	font-size: 37.5px;
+}
+
+.line_4 {
+	font-size: 50px;
+	line-height: 20px;
+}
+
+.line_5 {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.line_6 {
+	font-size: 30px;
+}
+
+.line_7 {
+	font-size:38px;
+}
+
+.line_8 {
+	font-size:35.5px;
+	line-height:20px;
+}
+
+.line_9 {
+	font-size: 32.5px;
+	line-height:30px;
+}
 /*********************
 HEADER STYLES
 *********************/
@@ -375,8 +439,12 @@ PAGES
 }
 
 .hello-p {
-	color: $white;
+	color: #000;
 	text-align: center;
+}
+
+.hello p {
+	color: #888;
 }
 
 .frog {

@@ -22,12 +22,24 @@
 						<main id="main" class="m-all t-all d-all" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 								<div class="hello m-all t-all d-all">	
 									
-									<h1>HI, HOW<br />ARE YOU</h1>
+									<h1 class="big-red"><span class="title_1">HI, HOW</span><br/>
+										<span class="title_2">ARE YOU?</span>
+									</h1>
 
-									<p>My name is Scott, and I like the interwebs.<br>
-									Right now, I’m doing front end & rails things with
-									<a href="http://ownlocal.com" target="_blank">OwnLocal</a> and WordPress in my free<br>time. I also drum, compose & spend 
-									way<br>too much of my money eating here.</p>
+									<p>
+										<span class="line_1">My name is Scott,</span><br/> 
+										<span class="line_2">and I like the interwebs.</span>
+									</p>
+									<p>
+										<span class="line_3">Right now, I’m doing</span><br/>
+										<span class="line_4"><a class="bold-red-link" href="#">front end</a> & <a class="bold-red-link" href="#">rails</a></span><br/>
+										<span class="line_5">things w/ <a class="red-link" href="#">OwnLocal</a></span><br/>
+										<span class="line_6">and <a class="bold-red-link" href="#">WordPress</a> on the side.</span>
+									</p>
+									<p>
+										<span class="line_7">I also <a class="red-link" href="#">drum</a>, <a class="red-link" href="#">compose</a></span><br/>
+										<span class="line_8">& spend way too much</span><br/>
+										<span class="line_9">of my money eating <a class="red-link" href="#">here</a>.</span></p>
 								</div>
 
 						</main>
