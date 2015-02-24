@@ -27,7 +27,7 @@
 									</h1>
 
 									<p>
-										<span class="line_1">My name is Scott,</span><br/> 
+										<span class="line_1">My name is Scott</span><br/> 
 										<span class="line_2">and I like the interwebs.</span>
 									</p>
 									<p>
