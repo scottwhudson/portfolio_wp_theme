@@ -30,6 +30,7 @@ body {
   	height: 100%;
   	margin:0;
 	padding:0;
+	overflow-x: hidden;
 
 }
 
@@ -86,9 +87,219 @@ style a page via class
 	.page-id-10 {
 		background: url("../images/contact-background-min.jpg");
 	}
+	.page-id-56 {
+		background-color: #fff;
+	}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+
+
+/* Full Screen Nav CSS */
+
+main {
+  position: relative;
+  z-index: 2;
+  /* fix bug on iOS */
+  height: 100vh;
+  background-color: #fff;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  overflow-y: hidden;
+}
+
+.cd-nav-trigger {
+  position: fixed;
+  z-index: 3;
+  left: 5%;
+  top: 20px;
+  padding: 15px;
+  background-color: #1e4164;
+  box-shadow: 4px 4px 0px #888888;
+  /*border-radius: 50%;*/
+  /* image replacement */
+  overflow: hidden;
+  /*text-indent: 100%;*/
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  color: #fff;
+  font-weight: 800;
+}
+
+.navigation-is-open main {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.cd-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #1e4164;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.7s;
+  -moz-transition: visibility 0s 0.7s;
+  transition: visibility 0s 0.7s;
+}
+.cd-nav .cd-navigation-wrapper {
+  /* all navigation content */
+	height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 40px 5% 40px calc(5% + 80px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
+.navigation-is-open .cd-nav {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.navigation-is-open .cd-nav .cd-navigation-wrapper {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+.cd-nav h2 {
+  position: relative;
+  margin-bottom: 1.7em;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.light {
+  font-weight: 100;
+}
+.cd-nav h2::after {
+  /* bottom separation line */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  height: 1px;
+  width: 90px;
+  background-color: currentColor;
+}
+.cd-nav .cd-primary-nav {
+  margin-top: 60px;
+}
+.cd-nav .cd-primary-nav li {
+  margin: 1.6em 0;
+}
+.cd-nav .cd-primary-nav a {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #a3dbd4;
+  display: inline-block;
+}
+
+.latest-article span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 14pt;
+}
+.cd-nav .cd-primary-nav a.selected {
+  color: #ffffff;
+  text-shadow: 3px 3px 0px #888888;
+}
+.no-touch .cd-nav .cd-primary-nav a:hover {
+  color: #ffffff;
+  text-shadow: 3px 3px 0px #888888;
+      -moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+}
+.cd-nav .cd-contact-info {
+  margin-top: 80px;
+}
+.cd-nav .cd-contact-info li {
+  font-family: "Montserrat", serif;
+  margin-bottom: 1.5em;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.3);
+}
+.cd-nav .cd-contact-info a {
+  color: #ffffff;
+}
+.cd-nav .cd-contact-info span {
+  display: block;
+}
+.cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
+  font-size: 1.6rem;
+}
+
+.no-js main {
+  height: auto;
+  overflow: visible;
+}
+
+.no-js .cd-nav {
+  position: static;
+  visibility: visible;
+}
+.no-js .cd-nav .cd-navigation-wrapper {
+  height: auto;
+  overflow: visible;
+  padding: 100px 5%;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
 
 .wrap {
 	width: 96%;
@@ -104,9 +315,7 @@ LAYOUT & GRID STYLES
 	position: relative;
 }
 
-.hidden {
-	display: none;
-}
+
 /*********************
 LINK STYLES
 *********************/
@@ -182,7 +391,7 @@ h5, .h5 {
 
 .big-red {
 	color: #e83a25;
-	text-shadow: 3px 3px 0px #888;
+	text-shadow: 4px 4px 0px #888;
 	letter-spacing: 4px;
 }
 
@@ -359,12 +568,11 @@ and more scalable.
 	z-index:100000000000;
 }
 .navButton {
-	background-color:transparent;
+	background-color:#333;
 	color: $white;
 	display:block;
 	float: left;
 	position: relative;
-	opacity: 0.5;
 	border: none;
 	margin-left: 15px;
 	margin-top:15px;
@@ -443,9 +651,17 @@ PAGES
 	text-align: center;
 }
 
-.hello p {
-	color: #888;
-	letter-spacing: 2px;
+.hello {
+
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+		p {
+			color: #888;
+			letter-spacing: 2px;
+		}
 }
 
 .frog {
@@ -474,7 +690,14 @@ PAGES
 		margin-bottom: 20px;
 		color: $white;
 		padding: 0 0.6em;
+		text-shadow: 2.5px 2.5px 0px #888;
 	}
+}
+
+.title-2-container {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 // .contact-border {
@@ -507,6 +730,7 @@ POSTS & CONTENT STYLES
 			footer {
 				padding: 1.5em 0 0;
 				text-align: center;
+				background-color: #fff;
 
 				}
 

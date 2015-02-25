@@ -44,47 +44,10 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+			<div id="container">
 
-		<div id="container">
-
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
-				<div id="inner-header" class="nav-wrap cf">
-
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<!-- <p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p> -->
-
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+				<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
-    					         'container' => false,                           // remove nav container
-    					         'container_class' => 'cf',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
 
-					</nav>
-
-					<button class="navButton" id="topheight"><i class="fa fa-bars fa-2x"></i></button>
-
-					<nav class="social-nav">
-						<ul>
-							<li><a href="https://github.com/scottwhudson" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-							<li><a href="https://twitter.com/swhudson" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-							<li><a href="http://www.linkedin.com/in/scottwhudson" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-						</ul>
-					</nav>	
-
-				</div>
-
-			</header>
+				</header>
