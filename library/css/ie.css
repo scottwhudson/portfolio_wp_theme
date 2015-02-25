@@ -257,18 +257,19 @@ HEADER STYLES
 /* line 50, ../scss/breakpoints/_768up.scss */
 .title-2-container {
   background-image: url("../images/transparent-frog.png");
-  background-image-width: 100px;
+  background-repeat: no-repeat;
+  background-position: center 110px;
 }
 
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 59, ../scss/breakpoints/_768up.scss */
+/* line 61, ../scss/breakpoints/_768up.scss */
 .navButton {
   display: none;
 }
 
-/* line 63, ../scss/breakpoints/_768up.scss */
+/* line 65, ../scss/breakpoints/_768up.scss */
 .nav {
   border: 0;
   width: 400px;
@@ -279,12 +280,12 @@ NAVIGATION STYLES
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 71, ../scss/breakpoints/_768up.scss */
+/* line 73, ../scss/breakpoints/_768up.scss */
 .nav ul {
   background: #333333;
   margin-top: 0;
 }
-/* line 76, ../scss/breakpoints/_768up.scss */
+/* line 78, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -296,7 +297,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 83, ../scss/breakpoints/_768up.scss */
+/* line 85, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   color: white;
@@ -311,7 +312,7 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 102, ../scss/breakpoints/_768up.scss */
+/* line 104, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: white;
   border-bottom: 4px solid white;
@@ -321,12 +322,12 @@ NAVIGATION STYLES
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-/* line 122, ../scss/breakpoints/_768up.scss */
+/* line 124, ../scss/breakpoints/_768up.scss */
 .nav li:first-child {
   padding-left: 0px;
   margin-left: 0px;
 }
-/* line 132, ../scss/breakpoints/_768up.scss */
+/* line 134, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -337,7 +338,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 140, ../scss/breakpoints/_768up.scss */
+/* line 142, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -346,7 +347,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 142, ../scss/breakpoints/_768up.scss */
+/* line 144, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -355,30 +356,30 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 159, ../scss/breakpoints/_768up.scss */
+/* line 161, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 169, ../scss/breakpoints/_768up.scss */
+/* line 171, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 184, ../scss/breakpoints/_768up.scss */
+/* line 186, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
 }
 
 /* end .nav */
-/* line 200, ../scss/breakpoints/_768up.scss */
+/* line 202, ../scss/breakpoints/_768up.scss */
 .menu-item-14:hover {
   border-color: #3d5078;
 }
 
-/* line 204, ../scss/breakpoints/_768up.scss */
+/* line 206, ../scss/breakpoints/_768up.scss */
 .social-nav {
   margin: 0px;
 }
@@ -386,20 +387,20 @@ NAVIGATION STYLES
 /*********************
 PAGES
 *********************/
-/* line 216, ../scss/breakpoints/_768up.scss */
+/* line 218, ../scss/breakpoints/_768up.scss */
 .page-id-4 .nav .menu-item-15 a {
   color: white;
   border-bottom: 4px solid #3d5078;
   opacity: 1;
 }
 
-/* line 228, ../scss/breakpoints/_768up.scss */
+/* line 230, ../scss/breakpoints/_768up.scss */
 .blog .nav .menu-item-14 a {
   color: white;
   border-bottom: 4px solid white;
 }
 
-/* line 235, ../scss/breakpoints/_768up.scss */
+/* line 237, ../scss/breakpoints/_768up.scss */
 .main {
   height: 100%;
   margin-top: auto;
@@ -408,7 +409,7 @@ PAGES
   top: 50%;
 }
 
-/* line 243, ../scss/breakpoints/_768up.scss */
+/* line 245, ../scss/breakpoints/_768up.scss */
 .hello-h {
   text-align: left;
   font-size: 40pt;
@@ -417,19 +418,19 @@ PAGES
   margin: 0px;
 }
 
-/* line 251, ../scss/breakpoints/_768up.scss */
+/* line 253, ../scss/breakpoints/_768up.scss */
 .hello {
   height: 100%;
 }
 
-/* line 256, ../scss/breakpoints/_768up.scss */
+/* line 258, ../scss/breakpoints/_768up.scss */
 .hello-p {
   color: white;
   font-size: 12pt;
   text-align: left;
 }
 
-/* line 262, ../scss/breakpoints/_768up.scss */
+/* line 264, ../scss/breakpoints/_768up.scss */
 .frog {
   height: 100%;
   margin-top: 13%;
@@ -437,23 +438,23 @@ PAGES
   float: right;
   width: 350px;
 }
-/* line 268, ../scss/breakpoints/_768up.scss */
+/* line 270, ../scss/breakpoints/_768up.scss */
 .frog img {
   width: 350px;
   display: inline-block;
 }
 
-/* line 274, ../scss/breakpoints/_768up.scss */
+/* line 276, ../scss/breakpoints/_768up.scss */
 .blog-index-header {
   text-decoration: none;
 }
-/* line 277, ../scss/breakpoints/_768up.scss */
+/* line 279, ../scss/breakpoints/_768up.scss */
 .blog-index-header h1 {
   font-size: 32pt;
   text-decoration: none;
   padding-bottom: 20px;
 }
-/* line 282, ../scss/breakpoints/_768up.scss */
+/* line 284, ../scss/breakpoints/_768up.scss */
 .blog-index-header:hover {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -461,39 +462,39 @@ PAGES
   transition: all 1s ease;
   background-color: white;
 }
-/* line 289, ../scss/breakpoints/_768up.scss */
+/* line 291, ../scss/breakpoints/_768up.scss */
 .blog-index-header:hover h1 {
   color: #990000;
   text-decoration: none !important;
 }
-/* line 294, ../scss/breakpoints/_768up.scss */
+/* line 296, ../scss/breakpoints/_768up.scss */
 .blog-index-header:hover .entry-time {
   opacity: 1;
   text-decoration: none !important;
   color: #990000;
 }
 
-/* line 306, ../scss/breakpoints/_768up.scss */
+/* line 308, ../scss/breakpoints/_768up.scss */
 .article-header .entry-header {
   vertical-align: text-bottom;
 }
 
-/* line 313, ../scss/breakpoints/_768up.scss */
+/* line 315, ../scss/breakpoints/_768up.scss */
 .entry-time {
   opacity: 0;
 }
 
-/* line 317, ../scss/breakpoints/_768up.scss */
+/* line 319, ../scss/breakpoints/_768up.scss */
 .title-container {
   height: 600px;
 }
-/* line 319, ../scss/breakpoints/_768up.scss */
+/* line 321, ../scss/breakpoints/_768up.scss */
 .title-container h1 {
   font-size: 32pt;
   padding: 0;
 }
 
-/* line 325, ../scss/breakpoints/_768up.scss */
+/* line 327, ../scss/breakpoints/_768up.scss */
 .entry-content {
   padding: 1.5em 0 0;
   font-family: "Cardo", "Georgia", Cambria, Times New Roman, Times, serif;
@@ -509,7 +510,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 342, ../scss/breakpoints/_768up.scss */
+/* line 344, ../scss/breakpoints/_768up.scss */
 .footer {
   display: block;
   position: fixed;
@@ -520,7 +521,7 @@ mobile. Make sure to double check these!
   width: 100%;
 }
 
-/* line 354, ../scss/breakpoints/_768up.scss */
+/* line 356, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
