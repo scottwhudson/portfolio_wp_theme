@@ -2,6 +2,9 @@
 
 					<div id="inner-footer" class="wrap cf">
 
+
+
+
 						<nav role="navigation">
 							<?php wp_nav_menu(array(
 	    					'container' => '',                              // remove nav container

@@ -117,17 +117,19 @@ main {
   -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  overflow-y: hidden;
+  // overflow-y: hidden;
 }
 
 .cd-nav-trigger {
   position: fixed;
+  width: 100%;
   z-index: 3;
-  left: 5%;
-  top: 20px;
+  left: 0%;
   padding: 15px;
   background-color: #1e4164;
-  box-shadow: 4px 4px 0px #888888;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+
   /*border-radius: 50%;*/
   /* image replacement */
   overflow: hidden;
@@ -149,24 +151,46 @@ main {
 }
 
 .cd-nav {
-  position: fixed;
+ 	position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #1e4164;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
   -moz-transition: visibility 0s 0.7s;
   transition: visibility 0s 0.7s;
+
+  h2 {
+	  position: relative;
+	  margin-bottom: 10px;
+	  font-size: 1.3rem;
+	  font-weight: 800;
+	  letter-spacing: 4px;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	}
+
+	h2::after {
+	  /* bottom separation line */
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  bottom: -20px;
+	  height: 1px;
+	  width: 90px;
+	  background-color: currentColor;
+	}
+
 }
 .cd-nav .cd-navigation-wrapper {
   /* all navigation content */
 	height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 40px 5% 40px calc(5% + 80px);
+  padding: 20px;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -206,69 +230,67 @@ main {
   -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
   transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
 }
-.cd-nav h2 {
-  position: relative;
-  margin-bottom: 1.7em;
-  font-size: 1.3rem;
-  font-weight: 800;
-  letter-spacing: 4px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
 
 .light {
-  font-weight: 100;
+  font-weight: 100 !important;
 }
-.cd-nav h2::after {
-  /* bottom separation line */
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-  height: 1px;
-  width: 90px;
-  background-color: currentColor;
-}
+
 .cd-nav .cd-primary-nav {
   margin-top: 60px;
 }
 .cd-nav .cd-primary-nav li {
   margin: 1.6em 0;
+  text-transform: uppercase;
 }
 .cd-nav .cd-primary-nav a {
   font-family: "Montserrat", serif;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 20px;
   color: #a3dbd4;
   display: inline-block;
+  @include transition(text-shadow, transform 0.14s ease-in-out);
 }
 
-.latest-article span {
-  font-family: "Open Sans", sans-serif;
+.latest-article {
   font-weight: 100;
-  font-size: 14pt;
+  font-size: 12pt;
 }
+ 
+.cd-nav .cd-primary-nav a {
+  font-size: 14pt;
+  letter-spacing: 3px;
+}
+
 .cd-nav .cd-primary-nav a.selected {
   color: #ffffff;
   text-shadow: 3px 3px 0px #888888;
 }
+
+.cd-nav .cd-half-block {
+padding-top: 40px;
+width: 100%;
+}
+
 .no-touch .cd-nav .cd-primary-nav a:hover {
   color: #ffffff;
   text-shadow: 3px 3px 0px #888888;
-      -moz-transform: translate(-2px, -2px);
-    -ms-transform: translate(-2px, -2px);
-    -o-transform: translate(-2px, -2px);
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
+  -moz-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
 }
 .cd-nav .cd-contact-info {
   margin-top: 80px;
 }
 .cd-nav .cd-contact-info li {
   font-family: "Montserrat", serif;
+  font-size: 10pt;
   margin-bottom: 1.5em;
   line-height: 1.2;
-  color: rgba(255, 255, 255, 0.3);
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
 }
 .cd-nav .cd-contact-info a {
   color: #ffffff;
@@ -292,7 +314,7 @@ main {
 .no-js .cd-nav .cd-navigation-wrapper {
   height: auto;
   overflow: visible;
-  padding: 100px 5%;
+  padding: 10px 5%;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -393,6 +415,7 @@ h5, .h5 {
 	color: #e83a25;
 	text-shadow: 4px 4px 0px #888;
 	letter-spacing: 4px;
+	width: 100%;
 }
 
 .bold-red-link {
@@ -407,6 +430,7 @@ h5, .h5 {
 }
 
 .title_1 {
+	margin-top: 50px;
 	font-size:80px;
 }
 
@@ -462,8 +486,11 @@ HEADER STYLES
 	// background-color: #666666;
 }
 
-	#logo {
-		// margin: 0.75em 0;
+	.logo {
+			 width: 100px;
+			 margin-left: auto;
+			 margin-right: auto;
+
 
 		a {
 			color: $white;
@@ -695,8 +722,9 @@ PAGES
 }
 
 .title-2-container {
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
+	margin-top: 80px;
+	// margin: 0 auto;
 	text-align: center;
 }
 
@@ -717,7 +745,7 @@ POSTS & CONTENT STYLES
 	}
 
 		.hentry {
-			background-color: transparent;
+			background-color: #ffffff;
 			margin-bottom: 1.5em;
 
 			header {
@@ -975,80 +1003,6 @@ POSTS & CONTENT STYLES
 		margin: 0;
 	}
 
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-
-.pagination,
-.wp-prev-next {
-	margin: 1.5em 0;
-}
-	.pagination{
-    text-align: center;
-
-    ul {
-      display: inline-block;
-      background-color: $white;
-      white-space: nowrap;
-      padding: 0;
-      clear: both;
-      border-radius: 3px;
-    }
-
-    li {
-      padding: 0;
-      margin: 0;
-      float: left;
-      display: inline;
-      overflow: hidden;
-      border-right: 1px solid $gray;
-    }
-
-    a, span {
-      margin: 0;
-      text-decoration: none;
-      padding: 0;
-      line-height: 1em;
-      font-size: 1em;
-      font-weight: normal;
-      padding: 0.75em;
-      min-width: 1em;
-      display: block;
-      color: $blue;
-
-      &:hover, &:focus {
-      	background-color: $blue;
-      	color: $white;
-      }
-    }
-
-    .current{
-    	cursor: default;
-    	color: $text-color;
-
-    	&:hover, &:focus {
-    		background-color: $white;
-    		color: $text-color;
-    	}
-    }
-
-  } /* end .bones_page_navi */
-
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
-		}
-
-		.next-link {
-			float: right;
-		}
-
-	} /* end .wp-prev-next */
-
 
 /*********************
 FOOTER STYLES
@@ -1085,40 +1039,4 @@ FOOTER STYLES
 
 	.copyright {}
 
-
-/*********************
-ANIMATIONS
-*********************/
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft;
-}
 

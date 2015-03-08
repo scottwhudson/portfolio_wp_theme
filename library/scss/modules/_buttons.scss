@@ -74,3 +74,29 @@ and it will create a button dependant on those variables.
   } // end active
 
 } // end blue button
+
+.send-btn {
+  background: transparent;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  color: #fff;
+  width: 50%;
+  padding: 10px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #fff;
+    color: #1e4164;
+    -moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+    @include transition(box-shadow 0.14s ease-in-out);
+    @include transition(transform 0.14s ease-in-out);
+    box-shadow: 3px 3px 0px #a3dbd4;
+  }
+
+}

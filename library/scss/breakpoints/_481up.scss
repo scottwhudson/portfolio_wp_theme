@@ -26,8 +26,15 @@ them in here, they won't work.
 /*********************
 NAVIGATION STYLES
 *********************/
+.cd-nav-trigger {
+	width: 100px;
+	top: 20px;
+	border-bottom: none;
 
-
+}
+.cd-nav .cd-navigation-wrapper {
+  padding: 40px 5% 40px calc(5% + 80px);
+}
 
 /*********************
 POSTS & CONTENT STYLES

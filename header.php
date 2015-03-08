@@ -48,6 +48,8 @@
 
 				<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
+					<a href="#cd-nav" class="cd-nav-trigger">MENU</a>
+
 
 
 				</header>

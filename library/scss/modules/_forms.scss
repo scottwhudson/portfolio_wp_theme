@@ -35,6 +35,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"],
+input[type="textarea"]
 select,
 textarea,
 .field {
@@ -48,14 +49,12 @@ textarea,
   border-top: none;
   border-left: none;
   border-right: none;
-  color: $white;
+  color: #a3dbd4;
   vertical-align: middle;
   box-shadow: none;
   width: 100%;
-  max-width: 400px;
   font-family: $montserrat;
   background-color: transparent;
-  opacity: 0.6;
 
   @include transition(opacity 0.24s ease-in-out);
 
@@ -115,9 +114,10 @@ input[type="password"] {
 
 // textareas
 textarea {
-  max-width: 100%;
-  min-height: 120px;
+  max-width: 500px;
+  min-height: 150px;
   line-height: 1.5em;
+  background-color: transparent;
 }
 
 // selects
@@ -143,4 +143,10 @@ select {
 
   :-ms-input-placeholder {  
      color: $white;  
+  }
+
+  #validation {
+    width: 40% !important;
+    float: left;
+    margin-top: 3px;
   }

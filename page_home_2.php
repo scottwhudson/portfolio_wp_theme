@@ -37,7 +37,10 @@
 											<span class="line_7">I also <a class="red-link" href="#">drum</a>, <a class="red-link" href="#">compose</a></span><br/>
 											<span class="line_8">& spend way too much</span><br/>
 											<span class="line_9">of my money eating <a class="red-link" href="#">here</a>.</span></p>
-										</div>	
+											<br/>
+											<img class="logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
+										</div>
+
 								</div>
 
 						</main>
