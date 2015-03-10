@@ -22,6 +22,9 @@ anymore, so just be aware that if you drop
 them in here, they won't work.
 */
 
+.wrap {
+	width:450px;
+}
 
 /*********************
 NAVIGATION STYLES
@@ -39,6 +42,10 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+#error-h1 {
+	font-size: 140pt;
+	text-shadow: 7px 7px 0px $text-color;
+}
 
 /* entry content */
 .entry-content {

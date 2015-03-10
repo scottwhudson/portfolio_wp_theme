@@ -185,17 +185,22 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
+/* line 25, ../scss/breakpoints/_481up.scss */
+.wrap {
+  width: 450px;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 29, ../scss/breakpoints/_481up.scss */
+/* line 32, ../scss/breakpoints/_481up.scss */
 .cd-nav-trigger {
   width: 100px;
   top: 20px;
   border-bottom: none;
 }
 
-/* line 35, ../scss/breakpoints/_481up.scss */
+/* line 38, ../scss/breakpoints/_481up.scss */
 .cd-nav .cd-navigation-wrapper {
   padding: 40px 5% 40px calc(5% + 80px);
 }
@@ -203,24 +208,30 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+/* line 45, ../scss/breakpoints/_481up.scss */
+#error-h1 {
+  font-size: 140pt;
+  text-shadow: 7px 7px 0px #888888;
+}
+
 /* entry content */
-/* line 44, ../scss/breakpoints/_481up.scss */
+/* line 51, ../scss/breakpoints/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */
 }
-/* line 48, ../scss/breakpoints/_481up.scss */
+/* line 55, ../scss/breakpoints/_481up.scss */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
 }
-/* line 53, ../scss/breakpoints/_481up.scss */
+/* line 60, ../scss/breakpoints/_481up.scss */
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right;
 }
-/* line 58, ../scss/breakpoints/_481up.scss */
+/* line 65, ../scss/breakpoints/_481up.scss */
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -248,7 +259,7 @@ LAYOUT & GRID STYLES
 *********************/
 /* line 28, ../scss/breakpoints/_768up.scss */
 .wrap {
-  width: 700px;
+  width: 600px;
 }
 
 /* line 32, ../scss/breakpoints/_768up.scss */
@@ -389,7 +400,7 @@ NAVIGATION STYLES
 /* end .nav */
 /* line 203, ../scss/breakpoints/_768up.scss */
 .menu-item-14:hover {
-  border-color: #3d5078;
+  border-color: #1e4164;
 }
 
 /* line 207, ../scss/breakpoints/_768up.scss */
@@ -400,20 +411,26 @@ NAVIGATION STYLES
 /*********************
 PAGES
 *********************/
-/* line 219, ../scss/breakpoints/_768up.scss */
+/* line 214, ../scss/breakpoints/_768up.scss */
+#error-h1 {
+  font-size: 230pt;
+  text-shadow: 10px 10px 0px #888888;
+}
+
+/* line 223, ../scss/breakpoints/_768up.scss */
 .page-id-4 .nav .menu-item-15 a {
   color: white;
-  border-bottom: 4px solid #3d5078;
+  border-bottom: 4px solid #1e4164;
   opacity: 1;
 }
 
-/* line 231, ../scss/breakpoints/_768up.scss */
+/* line 235, ../scss/breakpoints/_768up.scss */
 .blog .nav .menu-item-14 a {
   color: white;
   border-bottom: 4px solid white;
 }
 
-/* line 238, ../scss/breakpoints/_768up.scss */
+/* line 242, ../scss/breakpoints/_768up.scss */
 .main {
   height: 100%;
   margin-top: auto;
@@ -422,7 +439,7 @@ PAGES
   top: 50%;
 }
 
-/* line 246, ../scss/breakpoints/_768up.scss */
+/* line 250, ../scss/breakpoints/_768up.scss */
 .hello-h {
   text-align: left;
   font-size: 40pt;
@@ -431,19 +448,19 @@ PAGES
   margin: 0px;
 }
 
-/* line 254, ../scss/breakpoints/_768up.scss */
+/* line 258, ../scss/breakpoints/_768up.scss */
 .hello {
   height: 100%;
 }
 
-/* line 259, ../scss/breakpoints/_768up.scss */
+/* line 263, ../scss/breakpoints/_768up.scss */
 .hello-p {
   color: white;
   font-size: 12pt;
   text-align: left;
 }
 
-/* line 265, ../scss/breakpoints/_768up.scss */
+/* line 269, ../scss/breakpoints/_768up.scss */
 .frog {
   height: 100%;
   margin-top: 13%;
@@ -451,23 +468,23 @@ PAGES
   float: right;
   width: 350px;
 }
-/* line 271, ../scss/breakpoints/_768up.scss */
+/* line 275, ../scss/breakpoints/_768up.scss */
 .frog img {
   width: 350px;
   display: inline-block;
 }
 
-/* line 277, ../scss/breakpoints/_768up.scss */
+/* line 281, ../scss/breakpoints/_768up.scss */
 .blog-index-header {
   text-decoration: none;
 }
-/* line 280, ../scss/breakpoints/_768up.scss */
+/* line 284, ../scss/breakpoints/_768up.scss */
 .blog-index-header h1 {
   font-size: 32pt;
   text-decoration: none;
   padding-bottom: 20px;
 }
-/* line 285, ../scss/breakpoints/_768up.scss */
+/* line 289, ../scss/breakpoints/_768up.scss */
 .blog-index-header:hover {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -475,39 +492,39 @@ PAGES
   transition: all 1s ease;
   background-color: white;
 }
-/* line 292, ../scss/breakpoints/_768up.scss */
+/* line 296, ../scss/breakpoints/_768up.scss */
 .blog-index-header:hover h1 {
-  color: #990000;
+  color: #e83a25;
   text-decoration: none !important;
 }
-/* line 297, ../scss/breakpoints/_768up.scss */
+/* line 301, ../scss/breakpoints/_768up.scss */
 .blog-index-header:hover .entry-time {
   opacity: 1;
   text-decoration: none !important;
-  color: #990000;
+  color: #e83a25;
 }
 
-/* line 309, ../scss/breakpoints/_768up.scss */
+/* line 313, ../scss/breakpoints/_768up.scss */
 .article-header .entry-header {
   vertical-align: text-bottom;
 }
 
-/* line 316, ../scss/breakpoints/_768up.scss */
+/* line 320, ../scss/breakpoints/_768up.scss */
 .entry-time {
   opacity: 0;
 }
 
-/* line 320, ../scss/breakpoints/_768up.scss */
+/* line 324, ../scss/breakpoints/_768up.scss */
 .title-container {
   height: 600px;
 }
-/* line 322, ../scss/breakpoints/_768up.scss */
+/* line 326, ../scss/breakpoints/_768up.scss */
 .title-container h1 {
   font-size: 32pt;
   padding: 0;
 }
 
-/* line 328, ../scss/breakpoints/_768up.scss */
+/* line 332, ../scss/breakpoints/_768up.scss */
 .entry-content {
   padding: 1.5em 0 0;
   font-family: "Cardo", "Georgia", Cambria, Times New Roman, Times, serif;
@@ -523,7 +540,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 345, ../scss/breakpoints/_768up.scss */
+/* line 349, ../scss/breakpoints/_768up.scss */
 .footer {
   display: block;
   position: fixed;
@@ -534,7 +551,7 @@ mobile. Make sure to double check these!
   width: 100%;
 }
 
-/* line 357, ../scss/breakpoints/_768up.scss */
+/* line 361, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.

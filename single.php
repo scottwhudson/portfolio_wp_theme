@@ -51,13 +51,17 @@
 		                      'link_after'  => '</span>',
 		                    ) );
 		                  ?>
-		                </section> <?php // end article section ?>
-
+		                </section>
 		                <footer class="wrap article-footer">
 
-		                	<a href="#"><span><i class="fa fa-chevron-left"></i>&nbsp; PREV POST</span></a>
-		                	&nbsp; &nbsp;
-		                	<a href="#"><span>NEXT POST &nbsp; <i class="fa fa-chevron-right"></i></span></a>
+		                	<!-- <a href="#"><span><i class="fa fa-chevron-left"></i>&nbsp; PREV POST</span></a> -->
+		                	<?php
+												$next_post = get_next_post();
+												if (!empty( $next_post )): ?>
+											  	<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo "NEXT POST" ?><i class="fa fa-chevron-right"></a>
+											<?php endif; ?>
+
+
 
 		                </footer> <?php // end article footer ?>
 
@@ -82,7 +86,7 @@
 						<?php endif; ?>
 
 					</main>
-
+							             
 				</div>
 
 			</div>

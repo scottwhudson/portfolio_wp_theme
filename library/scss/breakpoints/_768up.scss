@@ -26,7 +26,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 700px;
+	width: 600px;
 }
 
 .wrap-full {
@@ -201,7 +201,7 @@ NAVIGATION STYLES
 } /* end .nav */
 
 .menu-item-14:hover {
-	border-color: $blue;
+	border-color: $dark-blue;
 }
 
 .social-nav {
@@ -211,6 +211,10 @@ NAVIGATION STYLES
 /*********************
 PAGES
 *********************/
+#error-h1 {
+	font-size: 230pt;
+	text-shadow: 10px 10px 0px $text-color;
+}
 
 .page-id-4 {
 	
@@ -218,7 +222,7 @@ PAGES
 		
 		.menu-item-15 a {
 			color: $white;
-			border-bottom:4px solid $blue;
+			border-bottom:4px solid $dark-blue;
 			opacity: 1;
 		}
 	}

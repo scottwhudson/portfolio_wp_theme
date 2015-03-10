@@ -38,16 +38,50 @@ body {
 WORDPRESS BODY CLASSES
 style a page via class
 ********************/
+#error-h1 {
+	padding-top: 60px;
+	font-size: 100pt;
+	text-shadow: 5px 5px 0px $text-color;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#error-container {
+	height:100vh;
+}
+
+.adobe-link {
+	text-align: center;
+	font-size:18pt;
+	letter-spacing: 3px;
+
+	a {
+		color: $red;
+
+		&:hover {
+			text-shadow: 2px 2px 0px $text-color;
+			-moz-transform: translate(-2px, -2px);
+		  -ms-transform: translate(-2px, -2px);
+  		-o-transform: translate(-2px, -2px);
+  		-webkit-transform: translate(-2px, -2px);
+ 			transform: translate(-2px, -2px);
+		}
+	}
+}
+
+.red {
+	color: $red;
+}
+
+.light-blue {
+	color: $light-blue;
+}
+
+.dark-blue {
+	color: $dark-blue;
+}
 
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {
-	background: url("../images/home-background.jpg");
-	}
-
-.blog {
-	background: url("../images/blog-background-min.jpg");
-	background-attachment: fixed;
-	}
 	                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -93,7 +127,9 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+#error404 {
 
+}
 
 /* Full Screen Nav CSS */
 
@@ -126,7 +162,7 @@ main {
   z-index: 3;
   left: 0%;
   padding: 15px;
-  background-color: #1e4164;
+  background-color: $dark-blue;
   text-align: center;
   border-bottom: 2px solid #fff;
 
@@ -138,7 +174,7 @@ main {
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
-  color: #fff;
+  color: $white;
   font-weight: 800;
 }
 
@@ -157,7 +193,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #1e4164;
+  background-color: $dark-blue;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
   -moz-transition: visibility 0s 0.7s;
@@ -169,7 +205,7 @@ main {
 	  font-size: 1.3rem;
 	  font-weight: 800;
 	  letter-spacing: 4px;
-	  color: #ffffff;
+	  color: $white;
 	  text-transform: uppercase;
 	}
 
@@ -347,7 +383,6 @@ a, a:visited {
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
 	}
 
 	/* on click */
@@ -491,10 +526,6 @@ HEADER STYLES
 			 margin-left: auto;
 			 margin-right: auto;
 
-
-		a {
-			color: $white;
-		}
 	}
 
 /*********************
@@ -522,12 +553,6 @@ and more scalable.
 	li {
 
 		a {
-			display: block;
-			color: $white;
-			font-weight: 700;
-			text-align: center;
-			padding: 0.75em;
-
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -702,9 +727,9 @@ PAGES
 }
 
 .blog-header {
-		color: $white;
-		font-size: 70pt;
-		
+		color: $light-blue;
+		font-size: 58pt;
+		padding-top: 60px;
 }
 
 .title-container {
@@ -741,17 +766,14 @@ POSTS & CONTENT STYLES
 }
 
 #content {
-	padding-bottom: 100px;
+	background-color: $white;
 	}
 
 		.hentry {
-			background-color: #ffffff;
 			margin-bottom: 1.5em;
 
 			header {
-				// border-bottom: 1px solid $light-gray;
-				// padding: 1.5em;
-				color: $white;
+				color: $red;
 				font-size: 10pt;
 			}
 
@@ -790,7 +812,7 @@ POSTS & CONTENT STYLES
 
 		.page-title {}
 
-		.entry-title {}
+	
 
 		.archive-title {}
 
@@ -803,18 +825,21 @@ POSTS & CONTENT STYLES
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
+		.post {
+			background-color: $white;
+			}            /* general post style */
 		.page {}            /* general article on a page style */
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
+		.hentry {
+			}          /* hentry class */
 		.category-slug {}   /* style by category (i.e. category-videos) */
 		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.byline {
 			display: none;
-			color: $meta-gray;
+			color: $dark-gray;
 			// font-style: italic;
 			margin-bottom: 15px;
 
@@ -861,7 +886,7 @@ POSTS & CONTENT STYLES
 				caption {
 					margin: 0 0 7px;
 					font-size: 0.75em;
-					color: $meta-gray;
+					color: $dark-gray;
 					text-transform: uppercase;
 					letter-spacing: 1px;
 				}
@@ -897,9 +922,9 @@ POSTS & CONTENT STYLES
 			blockquote {
 				margin: 0 0 1.5em 0.75em;
 				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
+				border-left: 3px solid $dark-blue;
 				font-style: italic;
-				color: $meta-gray;
+				color: $dark-gray;
 
 				&:before {}
 
